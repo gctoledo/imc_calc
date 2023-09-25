@@ -1,0 +1,35 @@
+.height,
+.weight {
+    padding: 16px;
+    background-color: var(--inputColor);
+    border-radius: 5px;
+    border: 1px solid var(--borderColor);
+    outline: none;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.form {
+    display: flex;
+    gap: 32px;
+}
+
+.results {
+    display: flex;
+    align-items: center;
+    background-color: var(--inputColor);
+    border-radius: 5px;
+    border: 1px solid var(--borderColor);
+    padding: 0 24px;
+    text-align: center;
+}
+
+.textResults {
+    font-weight: bold;
+    font-size: 24px;
+    margin-top: 16px;
+}
