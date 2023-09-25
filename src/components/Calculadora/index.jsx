@@ -28,7 +28,7 @@ const Calculadora = () => {
 
     }, [result])
 
-    const imcCalc = (e) => {
+    const getData = (e) => {
         if(e.target.id === 'height') {
             setHeight((e.target.value)/100);
         } else {
@@ -40,8 +40,8 @@ const Calculadora = () => {
         <>
             <form className={styles.form}>
                 <div className={styles.inputs}>
-                    <input type="number" placeholder="Altura (cm)" id='height' className={styles.height} onChange={imcCalc} required />
-                    <input type="number" placeholder="Peso (kg)" id='weight' className={styles.weight} onChange={imcCalc} required />
+                    <input type="number" placeholder="Altura (cm)" id='height' className={styles.height} onChange={getData} required />
+                    <input type="number" placeholder="Peso (kg)" id='weight' className={styles.weight} onChange={getData} required />
                 </div>
                 <div className={styles.results}>
                     <span>
